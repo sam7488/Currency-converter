@@ -7,7 +7,6 @@ const fromSelectElement = document.querySelector('.from select');
 const toSelectElement = document.querySelector('.to select');
 
 let timeoutId = null;
-let displaying = false;
 
 selectElement.forEach((select) => {
   for(let currCode in countryList) {
