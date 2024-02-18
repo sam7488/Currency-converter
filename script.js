@@ -49,20 +49,14 @@ btnElement.addEventListener(
 )
 
 function displayInvalid() {
-  if(!displaying){
-    displaying = true;
-    document.querySelector('.invalid').style.opacity = 1;
-    timeoutId = setTimeout(() => {
-      document.querySelector('.invalid').style.opacity = 0;
-      displaying = false;
-    },
-    2000
-    )
-  } else {
-    clearTimeout(timeoutId);
+  clearTimeout(timeoutId);
+  document.querySelector('.invalid').style.opacity = 1;
+  timeoutId = setTimeout(() => {
+    document.querySelector('.invalid').style.opacity = 0;
     displaying = false;
-    displayInvalid();
-  }
+  },
+  2000
+  )
 }
 
 const updateExchangeRate = async () => {
