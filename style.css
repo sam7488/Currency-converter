@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(227, 220, 210);
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  min-width: 30vw;
+}
+
+.container h2 {
+  text-align: center;
